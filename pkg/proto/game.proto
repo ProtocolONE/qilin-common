@@ -81,3 +81,7 @@ message LocalizedString {
     string IT = 6;
     string PT = 7;
 }
+
+message GameDeleted {
+    string ID = 1;
+}
