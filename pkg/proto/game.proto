@@ -10,7 +10,7 @@ message GameObject {
     LinkObject Developer = 6;
     string ReleaseDate = 7;
     TagObject GenreMain = 8;
-    TagObject Genres = 9;
+    repeated TagObject Genres = 9;
     Platforms Platforms = 10;
     Requirements Requirements = 11;
     Languages Languages =12;
