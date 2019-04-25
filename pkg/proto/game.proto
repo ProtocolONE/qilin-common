@@ -1,0 +1,83 @@
+syntax = "proto3";
+package proto;
+
+message GameObject {
+    string ID = 1;
+    repeated TagObject Tags = 2;
+    string Description = 3;
+    string Name = 4;
+    string Title = 5;
+    LinkObject Developer = 6;
+    string ReleaseDate = 7;
+    TagObject GenreMain = 8;
+    TagObject Genres = 9;
+    Platforms Platforms = 10;
+    Requirements Requirements = 11;
+    Languages Languages =12;
+    bool DisplayRemainingTime = 13;
+}
+
+message Languages {
+    Language EN = 1;
+    Language RU = 2;
+    Language FR = 3;
+    Language ES = 4;
+    Language DE = 5;
+    Language IT = 6;
+    Language PT = 7;
+}
+
+message Language {
+    bool Voice = 1;
+    bool Interface = 2;
+    bool Subtitles = 3;
+}
+
+message Requirements {
+    PlatformRequirements Windows = 1;
+    PlatformRequirements MacOs = 2;
+    PlatformRequirements Linux = 3;
+}
+
+message PlatformRequirements {
+    MachineRequirements Minimal =1;
+    MachineRequirements Recommended =2;
+}
+
+message MachineRequirements {
+    string System = 1;
+    string Processor = 2;
+    string Graphics = 3;
+    string Sound = 4;
+    int32 Ram = 5;
+    string RamDimension = 6;
+    int32 Storage = 7;
+    string StorageDimension = 8;
+    string Other = 9;
+}
+
+message Platforms {
+    bool Windows = 1;
+    bool MacOs = 2;
+    bool Linux = 3;
+}
+
+message LinkObject {
+    string ID = 1;
+    string Title = 2;
+}
+
+message TagObject {
+    string ID = 1;
+    LocalizedString Name = 2;
+}
+
+message LocalizedString {
+    string EN = 1;
+    string RU = 2;
+    string FR = 3;
+    string ES = 4;
+    string DE = 5;
+    string IT = 6;
+    string PT = 7;
+}
