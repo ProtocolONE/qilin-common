@@ -15,6 +15,8 @@ message GameObject {
     Requirements Requirements = 11;
     Languages Languages =12;
     bool DisplayRemainingTime = 13;
+    string FeaturesControl = 14;
+    repeated string Features = 15;
 }
 
 message Languages {
