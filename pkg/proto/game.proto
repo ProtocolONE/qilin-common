@@ -23,8 +23,8 @@ message GameObject {
 message Media {
     LocalizedString CoverImage = 1;
     LocalizedString CoverVideo = 2;
-    repeated LocalizedStringArray Trailers = 3;
-    repeated LocalizedStringArray Screenshots = 4;
+    LocalizedStringArray Trailers = 3;
+    LocalizedStringArray Screenshots = 4;
     LocalizedString Special = 5;
     LocalizedString Friends = 6;
     LocalizedString CapsuleGeneric = 7;
@@ -32,13 +32,13 @@ message Media {
 }
 
 message LocalizedStringArray {
-    repeated Language EN = 1;
-    repeated Language RU = 2;
-    repeated Language FR = 3;
-    repeated Language ES = 4;
-    repeated Language DE = 5;
-    repeated Language IT = 6;
-    repeated Language PT = 7;
+    repeated string EN = 1;
+    repeated string RU = 2;
+    repeated string FR = 3;
+    repeated string ES = 4;
+    repeated string DE = 5;
+    repeated string IT = 6;
+    repeated string PT = 7;
 }
 
 message Languages {
