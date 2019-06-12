@@ -4,7 +4,7 @@ package proto;
 message GameObject {
     string ID = 1;
     repeated TagObject Tags = 2;
-    string Description = 3;
+    LocalizedString Description = 3;
     string Name = 4;
     string Title = 5;
     LinkObject Developer = 6;
@@ -19,7 +19,7 @@ message GameObject {
     repeated string Features = 15;
     Media Media = 16;
     Ratings Ratings = 17;
-    string Tagline = 18;
+    LocalizedString Tagline = 18;
     string GameSite = 19;
     repeated Review Reviews = 20;
 }
