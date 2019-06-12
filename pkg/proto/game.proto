@@ -22,6 +22,7 @@ message GameObject {
     LocalizedString Tagline = 18;
     string GameSite = 19;
     repeated Review Reviews = 20;
+    LinkObject Publisher = 21;
 }
 
 message Review {
