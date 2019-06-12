@@ -19,6 +19,16 @@ message GameObject {
     repeated string Features = 15;
     Media Media = 16;
     Ratings Ratings = 17;
+    string Tagline = 18;
+    string GameSite = 19;
+    repeated Review Reviews = 20;
+}
+
+message Review {
+    string PressName = 1;
+    string Link = 2;
+    string Score = 3;
+    string Quote = 4;
 }
 
 message Ratings {
