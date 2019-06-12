@@ -18,9 +18,25 @@ message GameObject {
     string FeaturesControl = 14;
     repeated string Features = 15;
     Media Media = 16;
+    Ratings Ratings = 17;
 }
 
-message Media {
+message Ratings {
+    RatingInfo PEGI = 1;
+    RatingInfo BBFC = 2;
+    RatingInfo CERO = 3;
+    RatingInfo ESRB = 4;
+    RatingInfo USK  = 5;
+}
+
+message RatingInfo {
+    int32 AgeRestrict = 1;
+    bool DisplayOnlineNotice = 2;
+    bool ShowAgeRestrict = 3;
+    string Rating = 4;
+ }
+
+ message Media {
     LocalizedString CoverImage = 1;
     LocalizedString CoverVideo = 2;
     LocalizedStringArray Trailers = 3;
