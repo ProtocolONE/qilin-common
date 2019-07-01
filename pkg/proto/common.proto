@@ -1,0 +1,24 @@
+syntax = "proto3";
+package proto;
+
+message LocalizedStringArray {
+    repeated string EN = 1;
+    repeated string RU = 2;
+    repeated string FR = 3;
+    repeated string ES = 4;
+    repeated string DE = 5;
+    repeated string IT = 6;
+    repeated string PT = 7;
+}
+
+
+message LocalizedString {
+    string EN = 1;
+    string RU = 2;
+    string FR = 3;
+    string ES = 4;
+    string DE = 5;
+    string IT = 6;
+    string PT = 7;
+}
+

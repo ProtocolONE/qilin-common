@@ -1,0 +1,21 @@
+syntax = "proto3";
+package proto;
+
+import "common.proto";
+
+message Package {
+    string Id = 1;
+    string Sku = 2;
+    LocalizedString Name = 3;
+    LocalizedString Image = 4;
+    LocalizedString ImageCover = 5;
+    LocalizedString ImageThumb = 6;
+    bool IsUpgradeAllowed = 7;
+    bool IsEnabled = 8;
+    string DefaultProductId = 9;
+    string VendorId = 10;
+    string CreatorId = 11;
+    uint32 Discount = 12;
+    uint32 DiscountOption = 13;
+    repeated string AllowedCountries = 14;
+}

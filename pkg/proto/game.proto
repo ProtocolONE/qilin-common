@@ -1,6 +1,8 @@
 syntax = "proto3";
 package proto;
 
+import "common.proto";
+
 message GameObject {
     string ID = 1;
     repeated TagObject Tags = 2;
@@ -58,15 +60,6 @@ message RatingInfo {
     LocalizedString CapsuleSmall = 8;
 }
 
-message LocalizedStringArray {
-    repeated string EN = 1;
-    repeated string RU = 2;
-    repeated string FR = 3;
-    repeated string ES = 4;
-    repeated string DE = 5;
-    repeated string IT = 6;
-    repeated string PT = 7;
-}
 
 message Languages {
     Language EN = 1;
@@ -121,16 +114,6 @@ message LinkObject {
 message TagObject {
     string ID = 1;
     LocalizedString Name = 2;
-}
-
-message LocalizedString {
-    string EN = 1;
-    string RU = 2;
-    string FR = 3;
-    string ES = 4;
-    string DE = 5;
-    string IT = 6;
-    string PT = 7;
 }
 
 message GameDeleted {
